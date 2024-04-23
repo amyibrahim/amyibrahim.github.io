@@ -1,2 +1,4 @@
-# amyibrahim.github.io
-Personal website for training
+# Research Fellow, Moon Group
+# LSHTM
+
+Lab and genomics training
