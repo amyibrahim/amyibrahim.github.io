@@ -14,6 +14,10 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 # Associated publications
 
 # Training
+[Molecular Biology](./Molecular_biology.html) 
+
+[Guide design](./Guides.html) 
+
 
 # Selected projects
 
