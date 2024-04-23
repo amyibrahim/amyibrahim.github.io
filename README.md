@@ -1,10 +1,9 @@
 <!--# amyibrahim.github.io -->
 <!-- This is commented out. -->
-
+Research Fellow, Moon Group, LSHTM
 
 <img src="https://github.com/amyibrahim/amyibrahim.github.io/assets/35772608/06aaf2af-f043-4a38-9f15-b09080f91576" width="100" height="100">
 
-Research Fellow, Moon Group, LSHTM
 
 # Research
 
@@ -15,4 +14,6 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 # Associated publications
 
 # Training
+
+# Selected projects
 
