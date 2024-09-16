@@ -22,7 +22,7 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 [Nanopore analysis for custom barcodes] (./Nanopore_analysis_barcodes.html) 
 
-[Nanopore analysis for genome assembly](https://amyibrahim.github.io/Nanopore_analysis_genome_assembly.html/)
+[Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
 
 
 # Selected projects
