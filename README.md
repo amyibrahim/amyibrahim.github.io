@@ -13,11 +13,16 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 # Associated publications
 
-# Training
+# Lab Training
 [Molecular Biology](./Molecular_biology.html) 
 
 [Guide design](./Guides.html) 
 
+# Computational Training
+
+[Nanopore analysis for custom barcodes] (./Nanopore_analysis_barcodes.html) 
+
+[Nanopore analysis for genome assembly] (./Nanopore_analysis_genome_assembly.html)
 
 
 # Selected projects
