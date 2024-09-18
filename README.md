@@ -24,6 +24,9 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 [Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
 
+# Misc
+[Aids whilst PlasmoDB is down](./PlasmoDB_aids.html/)
+
 
 # Selected projects
 
