@@ -2,13 +2,13 @@
 
 This page will take you through the basic steps of analysis involved:
 
-** > Basecalling **
-** > Coverage analysis **
-** > Extracting the number of reads mapping to specific internal barcodes **
+**>Basecalling**
+**>Coverage analysis**
+**> Extracting the number of reads mapping to specific internal barcodes**
 
 
 
-* * Insert figure for analysis pipeline here * * 
+* *Insert figure for analysis pipeline here* * 
 
 
 ## 1) Set up your environment for sequence analysis
