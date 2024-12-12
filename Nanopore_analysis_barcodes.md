@@ -1,4 +1,4 @@
-# Code for custom internal barcode detection from nanopore amplicon sequencing 
+# Custom internal barcode detection from nanopore amplicon sequencing 
 
 This page will take you through the basic steps of analysis involved:
 
