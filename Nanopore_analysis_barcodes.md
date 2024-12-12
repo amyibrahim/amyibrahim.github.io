@@ -9,6 +9,7 @@ This page will take you through the basic steps of analysis involved:
 **> Extracting the number of reads mapping to specific internal barcodes**
 
 
+[image_forwebsite.pdf](https://github.com/user-attachments/files/18111360/image_forwebsite.pdf)
 
 
 *Insert figure for analysis pipeline here*
