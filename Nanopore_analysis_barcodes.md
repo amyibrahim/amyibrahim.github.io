@@ -2,24 +2,23 @@
 
 This page will take you through the basic steps of analysis involved:
 
-**>Basecalling**
+**>Base calling**
 
 **>Coverage analysis**
 
 **> Extracting the number of reads mapping to specific internal barcodes**
 
 
-[image_forwebsite.pdf](https://github.com/user-attachments/files/18111360/image_forwebsite.pdf)
-
-<img src="https://github.com/amyibrahim/amyibrahim.github.io/assets/35772608/06aaf2af-f043-4a38-9f15-b09080f91576" width="100" height="100">
-
 *Insert figure for analysis pipeline here*
 
 
 ## 1) Set up your environment for sequence analysis
 
-Firstly, migrate to your terminal, and log in to your account on the server, you will be prompted for your password (ask me if you do not know)
+Migrate to whereever you are working with your Nanopore data (I might have to show you how to do this if you are using the server)
 
+When in your workstation, you will have to download the pre-preapred conda environment that I have previously created
+
+All of the information 
 ```
 ssh username@10.18.0.26
 ```
