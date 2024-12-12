@@ -11,6 +11,7 @@ This page will take you through the basic steps of analysis involved:
 
 [image_forwebsite.pdf](https://github.com/user-attachments/files/18111360/image_forwebsite.pdf)
 
+<img src="https://github.com/amyibrahim/amyibrahim.github.io/assets/35772608/06aaf2af-f043-4a38-9f15-b09080f91576" width="100" height="100">
 
 *Insert figure for analysis pipeline here*
 
