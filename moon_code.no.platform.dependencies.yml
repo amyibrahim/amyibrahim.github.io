@@ -1,0 +1,20 @@
+name: moon_code
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bcftools
+  - r-ggplot2
+  - parallel
+  - samtools
+  - trimmomatic
+  - r-essentials
+  - biopython
+  - minimap2
+  - bwa
+  - tqdm
+  - r-base
+  - bedtools
+  - gatk4=4.1.4.1
+prefix: /home/amy/miniconda3/envs/moon_code
