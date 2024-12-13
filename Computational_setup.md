@@ -1,4 +1,4 @@
-# Setting up your PC for basic coding 
+# 1. PC SET UP 
 
 ## Individual installs for packages that are not obtained through conda
 
