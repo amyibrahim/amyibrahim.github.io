@@ -20,6 +20,8 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 # Computational Training
 
+[Initial computer set up for coding](./Computational_setup.md)
+
 [Nanopore analysis for custom barcodes](./Nanopore_analysis_barcodes.md) 
 
 [Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
