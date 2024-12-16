@@ -1,16 +1,40 @@
-title:null
 
 # 1. PC SET UP 
 
 ## Individual installs for packages that are not obtained through conda
 
-### 1) Install conda 
+### 1a) Install conda 
 
-Macbook install through download link:
+Install through download link:
+
+*note, working for Windows: install Miniconda rather than anaconda*
 
 ```
 https://www.anaconda.com/download/
 ```
+
+### 1b) Verify correct install of conda
+
+Open the Terminal (app) and type the following command 
+
+```
+.\miniconda3\_conda.exe create -n test
+```
+
+The above command is using conda to create a test environment called "test"
+
+IF conda is correctly installed, you will see the following messsage after the command has finished running:
+
+*Channels:
+-defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+.................*
+
+You will be prompted to proceed or not, type Y and Enter to proceed, and the test environment will finish loading.
+
+**If you did not see any of the above message, then conda has not installed properly and we will need to check this together**
 
 ### 2) Install dorado
 
