@@ -7,8 +7,8 @@ This page will take you through the basic steps of analysis involved:
 
 **> Extracting the number of reads mapping to specific internal barcodes**
 
+![Screenshot 2024-12-16 at 17 58 09](https://github.com/user-attachments/assets/261030e8-6b56-40a6-959f-c978ee97aa23)
 
-[image_forwebsite_nanopore_barcodes.pdf](https://github.com/user-attachments/files/18155028/image_forwebsite_nanopore_barcodes.pdf)
 
 ## 1) Set up your environment for sequence analysis
 
