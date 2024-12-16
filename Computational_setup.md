@@ -46,6 +46,7 @@ https://github.com/nanoporetech/dorado?tab=readme-ov-file
 
 *When using dorado, you have to include the whole file path to whereever you dorado version is installed, the programme itself is within the bin folder*
 
+![Screenshot 2024-12-16 at 17 54 45](https://github.com/user-attachments/assets/a5f6f51a-c42f-419c-9ef0-c2b5870004ae)
 
 Now that both dorado and anaconda are installed on your system, you can use anaconda (a package manager) to create working environments with the essential programmes installed.
 
