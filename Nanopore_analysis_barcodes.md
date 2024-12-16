@@ -1,4 +1,3 @@
-title:null
 
 This page will take you through the basic steps of analysis involved:
 
@@ -9,8 +8,7 @@ This page will take you through the basic steps of analysis involved:
 **> Extracting the number of reads mapping to specific internal barcodes**
 
 
-*Insert figure for analysis pipeline here*
-
+[image_forwebsite_nanopore_barcodes.pdf](https://github.com/user-attachments/files/18155028/image_forwebsite_nanopore_barcodes.pdf)
 
 ## 1) Set up your environment for sequence analysis
 
