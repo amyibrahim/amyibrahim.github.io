@@ -26,15 +26,10 @@ The above command is using conda to create a test environment called "test"
 IF conda is correctly installed, you will see the following messsage after the command has finished running:
 
 *Channels:
-
 -defaults
-
 Platform: win-64
-
 Collecting package metadata (repodata.json): done
-
 Solving environment: done
-
 .................*
 
 You will be prompted to proceed or not, type Y and Enter to proceed, and the test environment will finish loading.
