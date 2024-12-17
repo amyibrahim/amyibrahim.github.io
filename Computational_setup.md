@@ -90,3 +90,11 @@ To reactivate your working environment, use:
 conda activate moon_code
 ```
 
+
+## Code editors
+
+You will probably want to download a text editor for code editting, such as Sublime text
+
+```
+https://www.sublimetext.com/download
+```
