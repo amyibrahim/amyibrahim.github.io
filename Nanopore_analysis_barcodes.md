@@ -35,30 +35,27 @@ Now you have all of your packages and data that you need for the following analy
 
 ## 2) Basecall your sequence data using dorado
 
-Currently we have to log in to Dan's account to use dorado, I will need to install this on our own accounts so that we can locally access all of this in one place.
+Migrate to the folder where the fastqs are outputted which will look slightly like the image below:
 
-Migrate to the folder where the fastqs are outputted
-
-*insert image of folder loation here*
+<img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
 Create a folder for new basecalling output (mkdir) and then migrate into it (cd)
 
 ```
 mkdir dorado_sup_basecall
+```
 
+```
 cd dorado_sup_basecall
 ```
 
 Once you are in the folder, you can use a command to use dorado to start basecalling your bases 
 
 ```
-KIT_NAME="SQK-NBD114-96"
-
 dorado basecaller \
 --min-qscore 10 \
---kit-name $KIT_NAME \
+--kit-name SQK-NBD114-96 \
 sup ../pod5 > Filename_output.bam
-
 ```
 
 This creates a combined file in BAM format, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
