@@ -61,7 +61,41 @@ sup ../pod5 > Filename_output.bam
 
 ```
 
+This creates a combined file in BAM format, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
 
+We can use this file to split all of the data into one file per Nanopore barcode to split our isolates into their separate pools.
+
+This process is known as **demultiplexing**
+
+## 3) Demultiplexing reads
+
+```
+dorado demux --output-dir ./classified_demux --no-classify ./
+```
+
+Within this folder, you will see files for barcodes that you did not use, do not worry, these files are likely empty or rubbish and can be ignored
+
+You will want to create a separate folder containing only the barcodes that you have used, to ease all downstream analysis.
+
+## 4) Subsetting for barcodes that were used
+
+First create a folder for the barcodes that you have used 
+
+```
+mkdir barcodes_used
+```
+
+Create a list within this folder of the names of the barcodes that you have used (barcodes_used.txt)
+
+Move your files into the barcodes used folder
+
+```
+cat ./barcodes_used/barcodes_used.txt | parallel -j 1 "mv ./PATH/TO/FILE/{}.bam ./barcodes_used"
+
+```
+
+## 5) Map your reads (bam files previously created) to a reference genome 
+ 
 
 
 
