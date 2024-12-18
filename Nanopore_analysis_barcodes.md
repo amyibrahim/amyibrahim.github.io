@@ -2,9 +2,12 @@ title:null
 
 # Analysis of Nanopore data for custom internal barcode counting
 
+
+
 Overview of the process for combining pools of barcoded lines and analysis:
 
 ![Screenshot 2024-12-16 at 17 58 09](https://github.com/user-attachments/assets/261030e8-6b56-40a6-959f-c978ee97aa23)
+
 
 
 This page will take you through the basic steps of analysis involved:
@@ -16,17 +19,22 @@ This page will take you through the basic steps of analysis involved:
 **> Extracting the number of reads mapping to specific internal barcodes**
 
 
+
+---
+
 ## 1) Set up your environment for sequence analysis
 
-Migrate to whereever you are working with your Nanopore data *(I might have to show you how to do this if you are using the server)*
+- Migrate to a folder containing your Nanopore data *(I might have to show you how to do this if you are using the server)*
 
-When in your workstation, you will have to activate the pre-preapred conda environment that you have previously created using the **Computational Setup page.**
+- Activate the preapred conda environment that you have previously created using the **Computational Setup page.**
 
-Your conda environment is an area where you can work where all necessary programmes are installed.
+*Your conda environment is an area where you can work where all necessary programmes are installed*
 
 ```
 conda activate moon_code
 ```
+
+
 
 ---
 **NOTE**
@@ -35,9 +43,16 @@ conda activate moon_code
 
 ---
 
+
+
 The terminal will look like the image below when the environment has been activated, where **(moon_code)** will appear before your username, if you do not see this, retry activating the conda environment
 
 <img width="571" alt="Screenshot 2024-12-18 at 13 44 50" src="https://github.com/user-attachments/assets/d742fc14-86ff-405f-ad44-53d2b2178041" />
+
+
+
+
+---
 
 
 ## 2) Basecall your sequence data using dorado
