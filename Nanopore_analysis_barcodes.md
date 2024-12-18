@@ -2,14 +2,11 @@ title:null
 
 # Analysis of Nanopore data for custom internal barcode counting
 
-
-
 Overview of the process for combining pools of barcoded lines and analysis:
+<br>
 
 ![Screenshot 2024-12-16 at 17 58 09](https://github.com/user-attachments/assets/261030e8-6b56-40a6-959f-c978ee97aa23)
-
-
-
+<br>
 This page will take you through the basic steps of analysis involved:
 
 **>Base calling**
@@ -22,6 +19,7 @@ This page will take you through the basic steps of analysis involved:
 
 **>Creating plots in R**
 
+<br>
 ---
 
 ## 1) Set up your environment for sequence analysis
@@ -43,22 +41,22 @@ conda activate moon_code
 *Every time you open a new terminal you will need to run the line of code above to reactivate the conda environment*
 
 ---
-
-
+<br>
 
 The terminal will look like the image below when the environment has been activated, where **(moon_code)** will appear before your username, if you do not see this, retry activating the conda environment
 
 <img width="571" alt="Screenshot 2024-12-18 at 13 44 50" src="https://github.com/user-attachments/assets/d742fc14-86ff-405f-ad44-53d2b2178041" />
 
-
-
-
+<br>
 ---
 
 
 ## 2) Basecall your sequence data using dorado
 
-Migrate to the folder where the data from **MinKNOW** has been transferred to. MinKNOW outputs all seqeucing data in a folder with the name of the sequencing run, and all of the subdirectories are uniform between different runs. 
+- Migrate to the folder where the data from **MinKNOW** has been transferred to. MinKNOW outputs all seqeucing data in a folder with the name of the sequencing run, and all of the subdirectories are uniform between different runs. 
+The folder will look similar to the image below:
+
+<img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
 ---
 **NOTE**
@@ -66,20 +64,24 @@ Migrate to the folder where the data from **MinKNOW** has been transferred to. M
 *It is good to keep this run directory saved in a permanent storage space in case we need to go back to the raw data or retrieve information from each run*
 
 ---
-
-<img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
-
-Within your sequence run folder, create a folder for new basecalling output (mkdir to create a folder **) and then migrate into it (cd)
+<br>
+- Within your sequence run folder, *create a folder* for the new basecalling output that you are about to generate
 
 ```
 mkdir dorado_sup_basecall
 ```
 
+*mkdir = make a new directory*
+
+- Migrate into your new directory
+- 
 ```
 cd dorado_sup_basecall
 ```
 
-Once you are in the folder, you can use a command to use dorado to start basecalling your bases 
+*cd = change directory*
+
+- **Once you are in the folder, you can use a command to use dorado to start basecalling your bases**
 
 ```
 dorado basecaller \
