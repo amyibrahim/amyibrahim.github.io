@@ -29,7 +29,7 @@ conda activate moon_code
 ---
 **NOTE**
 
-Every time you open a new terminal you will need to run the line of code above to reactivate the conda environment
+*Every time you open a new terminal you will need to run the line of code above to reactivate the conda environment*
 
 ---
 
@@ -45,7 +45,7 @@ Migrate to the folder where the data from **MinKNOW** has been transferred to. M
 ---
 **NOTE**
 
-It is good to keep this run directory saved in a permanent storage space in case we need to go back to the raw data or retrieve information from each run.
+*It is good to keep this run directory saved in a permanent storage space in case we need to go back to the raw data or retrieve information from each run*
 
 ---
 
