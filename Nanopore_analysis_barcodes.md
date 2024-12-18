@@ -86,8 +86,6 @@ cd dorado_sup_basecall
 
 - Once you are in the folder, you can use a command to **use dorado to start basecalling your bases**
 
-```
-
 ---
 **NOTE**
 
@@ -96,6 +94,7 @@ cd dorado_sup_basecall
 ---
 <br>
 
+```
 dorado basecaller \
 --min-qscore 10 \
 --kit-name SQK-NBD114-96 \
