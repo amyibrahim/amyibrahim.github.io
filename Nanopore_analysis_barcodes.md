@@ -20,6 +20,7 @@ This page will take you through the basic steps of analysis involved:
 **>Creating plots in R**
 
 <br>
+
 ---
 
 ## 1) Set up your environment for sequence analysis
@@ -48,12 +49,14 @@ The terminal will look like the image below when the environment has been activa
 <img width="571" alt="Screenshot 2024-12-18 at 13 44 50" src="https://github.com/user-attachments/assets/d742fc14-86ff-405f-ad44-53d2b2178041" />
 
 <br>
+
 ---
 
 
 ## 2) Basecall your sequence data using dorado
 
-- Migrate to the folder where the data from **MinKNOW** has been transferred to. MinKNOW outputs all seqeucing data in a folder with the name of the sequencing run, and all of the subdirectories are uniform between different runs. 
+- Migrate to the folder where the data from **MinKNOW** has been transferred to. MinKNOW outputs all seqeucing data in a folder with the name of the sequencing run, and all of the subdirectories are uniform between different runs.
+  
 The folder will look similar to the image below:
 
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
@@ -65,25 +68,34 @@ The folder will look similar to the image below:
 
 ---
 <br>
-- Within your sequence run folder, *create a folder* for the new basecalling output that you are about to generate
+- Within your sequence run folder, **create a folder** for the new basecalling output that you are about to generate
 
 ```
 mkdir dorado_sup_basecall
 ```
 
 *mkdir = make a new directory*
+<br>
 
 - Migrate into your new directory
-- 
+
 ```
 cd dorado_sup_basecall
 ```
-
 *cd = change directory*
 
-- **Once you are in the folder, you can use a command to use dorado to start basecalling your bases**
+- Once you are in the folder, you can use a command to **use dorado to start basecalling your bases**
 
 ```
+
+---
+**NOTE**
+
+*The block of code below will needed to be editted to contain the whole filepath for dorado, for the correct library prep kit, and to edit the name of the output file for your run specifically*
+
+---
+<br>
+
 dorado basecaller \
 --min-qscore 10 \
 --kit-name SQK-NBD114-96 \
