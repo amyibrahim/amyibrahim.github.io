@@ -135,7 +135,14 @@ cat ./barcodes_used/barcodes_used.txt | parallel -j 1 "mv ./PATH/TO/FILE/{}.bam 
 ```
 
 ## 5) Map your reads (bam files previously created) to a reference genome 
- 
+
+
+ ---
+**NOTE**
+
+*You will need to create a reference genome specific for your question, this is likely the PlasmoDB seqeunce for the gene that your amplicon is amplified from - from DBP i have RII and can send this  *
+
+---
 
 
 
