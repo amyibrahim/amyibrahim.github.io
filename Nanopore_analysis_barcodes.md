@@ -18,12 +18,9 @@ This page will take you through the basic steps of analysis involved:
 
 Migrate to whereever you are working with your Nanopore data *(I might have to show you how to do this if you are using the server)*
 
-When in your workstation, you will have to download the pre-preapred conda environment that I have previously created, and you will have previously installed using the **Computational Setup page.**
+When in your workstation, you will have to activate the pre-preapred conda environment that you have previously created using the **Computational Setup page.**
 
-
-Your conda environment is an area where you can work where I have installed all of the programmes that you will need for these analysis steps.
-
-The programmes installed that you will need for this conda environment are all listed in a XXX.yml file, which I will email to you with the link to this site. Please download and save this file on your local PC.
+Your conda environment is an area where you can work where all necessary programmes are installed.
 
 ```
 conda activate moon_code
