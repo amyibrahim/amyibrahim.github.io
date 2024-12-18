@@ -14,11 +14,13 @@ This page will take you through the basic steps of analysis involved:
 
 **>Base calling**
 
+**>Mapping sequencing reads to a reference genome**
+
 **>Coverage analysis**
 
-**> Extracting the number of reads mapping to specific internal barcodes**
+**>Extracting the number of reads mapping to specific internal barcodes**
 
-
+**>Creating plots in R**
 
 ---
 
@@ -26,15 +28,14 @@ This page will take you through the basic steps of analysis involved:
 
 - Migrate to a folder containing your Nanopore data *(I might have to show you how to do this if you are using the server)*
 
-- Activate the preapred conda environment that you have previously created using the **Computational Setup page.**
+- Activate the preapred conda environment that you have previously created using the **Computational Setup page**
 
 *Your conda environment is an area where you can work where all necessary programmes are installed*
 
 ```
 conda activate moon_code
 ```
-
-
+<br>
 
 ---
 **NOTE**
