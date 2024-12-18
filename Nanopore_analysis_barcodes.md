@@ -26,7 +26,12 @@ Your conda environment is an area where you can work where all necessary program
 conda activate moon_code
 ```
 
+---
+**NOTE**
+
 Every time you open a new terminal you will need to run the line of code above to reactivate the conda environment
+
+---
 
 The terminal will look like the image below when the environment has been activated, where **(moon_code)** will appear before your username, if you do not see this, retry activating the conda environment
 
@@ -35,11 +40,18 @@ The terminal will look like the image below when the environment has been activa
 
 ## 2) Basecall your sequence data using dorado
 
-Migrate to the folder where the fastqs are outputted which will look slightly like the image below:
+Migrate to the folder where the data from **MinKNOW** has been transferred to. MinKNOW outputs all seqeucing data in a folder with the name of the sequencing run, and all of the subdirectories are uniform between different runs. 
+
+---
+**NOTE**
+
+It is good to keep this run directory saved in a permanent storage space in case we need to go back to the raw data or retrieve information from each run.
+
+---
 
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
-Create a folder for new basecalling output (mkdir) and then migrate into it (cd)
+Within your sequence run folder, create a folder for new basecalling output (mkdir to create a folder **) and then migrate into it (cd)
 
 ```
 mkdir dorado_sup_basecall
