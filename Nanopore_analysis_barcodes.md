@@ -26,7 +26,12 @@ Your conda environment is an area where you can work where all necessary program
 conda activate moon_code
 ```
 
-Now you have all of your packages and data that you need for the following analyses.
+Every time you open a new terminal you will need to run the line of code above to reactivate the conda environment
+
+The terminal will look like the image below when the environment has been activated, where **(moon_code)** will appear before your username, if you do not see this, retry activating the conda environment
+
+<img width="571" alt="Screenshot 2024-12-18 at 13 44 50" src="https://github.com/user-attachments/assets/d742fc14-86ff-405f-ad44-53d2b2178041" />
+
 
 ## 2) Basecall your sequence data using dorado
 
