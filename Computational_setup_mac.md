@@ -1,5 +1,5 @@
 
-# 1. PC SET UP 
+# 1. PC SET UP FOR MAC USERS
 
 ## Individual installs for packages that are not obtained through conda
 
