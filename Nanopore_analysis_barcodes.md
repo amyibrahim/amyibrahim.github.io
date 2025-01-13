@@ -1,4 +1,3 @@
-title:null 
 
 # Analysis of Nanopore data for custom internal barcode counting
 
