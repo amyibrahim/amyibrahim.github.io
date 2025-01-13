@@ -20,7 +20,9 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 # Computational Training
 
-[Initial computer set up for coding](./Computational_setup.md)
+[Initial computer set up for coding - mac users](./Computational_setup_mac.md)
+
+[Initial computer set up for coding - windows users](./Computational_setup_windows.md)
 
 [Nanopore analysis for custom barcodes](./Nanopore_analysis_barcodes.md) 
 
