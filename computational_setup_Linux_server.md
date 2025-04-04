@@ -50,7 +50,7 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 
 ### 2. Install dorado
 
-Install using [dorado's install link] (https://github.com/nanoporetech/dorado?tab=readme-ov-file) depending on what system you are working on
+Install using [dorado's install link](https://github.com/nanoporetech/dorado?tab=readme-ov-file) depending on what system you are working on
 
 *When using dorado, you have to include the whole file path to whereever you dorado version is installed, the programme itself is within the bin folder*
 
