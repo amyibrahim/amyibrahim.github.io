@@ -18,11 +18,11 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 ## Associated publications
 
-- Ibrahim, A. et al. **Genome sequencing of Plasmodium malariae identifies continental segregation and mutations associated with reduced pyrimethamine susceptibility.** Nature communications. 15, 10779 (2024).
+- Ibrahim, A. et al. **[Genome sequencing of Plasmodium malariae identifies continental segregation and mutations associated with reduced pyrimethamine susceptibility.](https://www.nature.com/articles/s41467-024-55102-3)** Nature communications. 15, 10779 (2024).
 
-- Ibrahim, A. et al. **Population genomic study of Plasmodium vivax malaria in seven Brazilian states and across South America.** Lancet Reg. Heal. - Am. 18, 100420 (2023).
+- Ibrahim, A. et al. **[Population genomic study of Plasmodium vivax malaria in seven Brazilian states and across South America.](https://www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00237-X/fulltext)** Lancet Reg. Heal. - Am. 18, 100420 (2023).
 
-- Ibrahim, A. et al. **Selective whole genome amplification of Plasmodium malariae DNA from clinical samples reveals insights into population structure.** Sci Rep. 10, 10832 (2020). 
+- Ibrahim, A. et al. **[Selective whole genome amplification of Plasmodium malariae DNA from clinical samples reveals insights into population structure.](https://www.nature.com/articles/s41598-020-67568-4)** Sci Rep. 10, 10832 (2020). 
 
 ## Lab Training
 [Molecular Biology](./Molecular_biology.html) 
