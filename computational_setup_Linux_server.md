@@ -8,17 +8,17 @@ First we will need to install the software that we need for our analyses on each
 
 ### 1. Logging in to your account on the server
 
-   i) Open the terminal on your PC, this will look something like:
+   **i) Open the terminal on your PC, this will look something like:**
 
 ![Screenshot from 2025-04-04 13-49-13](https://github.com/user-attachments/assets/bbac7c99-387e-40e8-9c17-92ca8cbd9805)
 
-   ii) log in to your server account using the format below, with your unique username
+   **ii) log in to your server account using the format below, with your unique username**
 
 ```
 ssh -X USERNAME@10.18.0.25
 ```
 
-   iii) You will be prompted for your password, this is the same as your username, then enter
+   **iii) You will be prompted for your password, this is the same as your username, then enter**
 
 
 
@@ -28,13 +28,13 @@ Conda is a package manager that simplifies the installs of multiple packages, th
 
 *see https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html for info on installs*
 
-   i) Whilst logged in to your account in the terminal, download the install file for mamba package installer
+   **i) Whilst logged in to your account in the terminal, download the install file for mamba package installer**
 
 ```
 wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 ```
 
-   ii) run the script to install mamba from the downloaded file
+   **ii) run the script to install mamba from the downloaded file**
 
 ```
 bash Miniforge3-$(uname)-$(uname -m).sh
@@ -50,11 +50,7 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 
 ### 2. Install dorado
 
-Install using dorado's install link depending on what system you are working on:
-
-```
-https://github.com/nanoporetech/dorado?tab=readme-ov-file
-```
+Install using [dorado's install link] (https://github.com/nanoporetech/dorado?tab=readme-ov-file) depending on what system you are working on
 
 *When using dorado, you have to include the whole file path to whereever you dorado version is installed, the programme itself is within the bin folder*
 
