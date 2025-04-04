@@ -7,9 +7,7 @@ Amy Ibrahim
 
 Research Fellow
 
-Moon Group
-
-LSHTM, London
+Moon Group, LSHTM, London
 
 
 ## Research
