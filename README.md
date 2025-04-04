@@ -18,11 +18,11 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 ## Associated publications
 
-- Ibrahim, A. et al. Genome sequencing of Plasmodium malariae identifies continental segregation and mutations associated with reduced pyrimethamine susceptibility. Nature communications. 15, 10779 (2024).
+- Ibrahim, A. et al. **Genome sequencing of Plasmodium malariae identifies continental segregation and mutations associated with reduced pyrimethamine susceptibility.** Nature communications. 15, 10779 (2024).
 
-- Ibrahim, A. et al. Population genomic study of Plasmodium vivax malaria in seven Brazilian states and across South America. Lancet Reg. Heal. - Am. 18, 100420 (2023).
+- Ibrahim, A. et al. **Population genomic study of Plasmodium vivax malaria in seven Brazilian states and across South America.** Lancet Reg. Heal. - Am. 18, 100420 (2023).
 
-- Ibrahim, A. et al. Selective whole genome amplification of Plasmodium malariae DNA from clinical samples reveals insights into population structure. Sci Rep. 10, 10832 (2020). 
+- Ibrahim, A. et al. **Selective whole genome amplification of Plasmodium malariae DNA from clinical samples reveals insights into population structure.** Sci Rep. 10, 10832 (2020). 
 
 ## Lab Training
 [Molecular Biology](./Molecular_biology.html) 
@@ -35,11 +35,14 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 [Initial computer set up for coding - windows users](./Computational_setup_windows.md)
 
+[Initial computational set up for coding - Linux servers](./computational_setup_Linux_server.md)
+
 [Nanopore analysis for custom barcodes](./Nanopore_analysis_barcodes.md) 
 
 [Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
 
 [Nanopore analysis for genome mapping and checking specific genes (basic)](./Nanopore_analysis_mapping_gene_check.md/)
+
 
 
 ## Misc
