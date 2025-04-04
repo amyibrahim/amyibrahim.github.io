@@ -6,24 +6,42 @@ An account has been made for you as an individual user on the Linux server syste
 
 First we will need to install the software that we need for our analyses on each account, then we can head to the nanopore analysis pages - We will only need to install these packages the first time that we log in to the server!
 
-### Logging in to your account on the server
+### 1. Logging in to your account on the server
 
-1. Open the terminal on your PC, this will look something like:
+i) Open the terminal on your PC, this will look something like:
 
 ![Screenshot from 2025-04-04 13-49-13](https://github.com/user-attachments/assets/bbac7c99-387e-40e8-9c17-92ca8cbd9805)
 
-2. log in to your server account using the format below, with your unique username
+ii) log in to your server account using the format below, with your unique username
 
 ```
 ssh -X USERNAME@10.18.0.25
 ```
 
-3. You will be prompted for your password, this is the same as your username, then enter
+iii) You will be prompted for your password, this is the same as your username, then enter
 
 
 
+### 2. Installing conda / mamba
 
+Conda is a package manager that simplifies the installs of multiple packages, there are various versions of this e.g. conda / anaconda / mamba
 
+*see https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html for info on installs*
+
+i) Whilst logged in to your account in the terminal, download the install file for mamba package installer
+
+```
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+```
+
+ii) run the script to install mamba from the downloaded file
+
+```
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
+*Note: this will install mamba in the miniforge3 folder which will be created in your top directory (pic below). When using conda, you will have to use the FULL FILEPATH rather than just 'conda' (~/miniforge3/bin/conda)* 
+
+![Screenshot from 2025-04-04 14-08-12](https://github.com/user-attachments/assets/48784b3d-a8f8-4897-b822-118a4481ddc5)
 
 
 
