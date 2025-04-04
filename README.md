@@ -32,7 +32,7 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 [Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
 
-[Nanopore analysis for genome mapping and checking specific genes (basic)](./TOFILL.html/)
+[Nanopore analysis for genome mapping and checking specific genes (basic)](./Nanopore_analysis_mapping_gene_check.md/)
 
 
 ## Misc
