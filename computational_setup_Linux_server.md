@@ -1,1 +1,127 @@
 
+
+# 1. PC SET UP FOR LINUX SERVER USERS
+
+An account has been made for you as an individual user on the Linux server systems, here we can analyse data and run large processes.
+
+First we will need to install the software that we need for our analyses on each account, then we can head to the nanopore analysis pages - We will only need to install these packages the first time that we log in to the server!
+
+### Logging in to your account on the server
+
+1. Open the terminal on your PC, this will look something like:
+
+![Screenshot from 2025-04-04 13-49-13](https://github.com/user-attachments/assets/bbac7c99-387e-40e8-9c17-92ca8cbd9805)
+
+2. log in to your server account using the format below, with your unique username
+
+```
+ssh -X USERNAME@10.18.0.25
+```
+
+3. You will be prompted for your password, this is the same as your username, then enter
+
+
+
+
+
+
+
+
+
+
+
+### 1a) Install conda 
+
+Install through download link:
+
+*note, working for Windows: install Miniconda rather than anaconda*
+
+```
+https://www.anaconda.com/download/
+```
+
+### 1b) Verify correct install of conda
+
+Open the Terminal (app) and type the following command 
+
+```
+.\miniconda3\_conda.exe create -n test
+```
+
+The above command is using conda to create a test environment called "test"
+
+IF conda is correctly installed, you will see the following messsage after the command has finished running:
+
+*Channels:
+-defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+.................*
+
+You will be prompted to proceed or not, type Y and Enter to proceed, and the test environment will finish loading.
+
+**If you did not see any of the above message, then conda has not installed properly and we will need to check this together**
+
+### 2) Install dorado
+
+Install using dorado's install link depending on what system you are working on:
+
+```
+https://github.com/nanoporetech/dorado?tab=readme-ov-file
+```
+
+*When using dorado, you have to include the whole file path to whereever you dorado version is installed, the programme itself is within the bin folder*
+
+![Screenshot 2024-12-16 at 17 54 45](https://github.com/user-attachments/assets/a5f6f51a-c42f-419c-9ef0-c2b5870004ae)
+
+Now that both dorado and anaconda are installed on your system, you can use anaconda (a package manager) to create working environments with the essential programmes installed.
+
+I have created a configuration file which contains all of the essential programmes needed for our code within the Moon lab.
+
+This environment is called **moon_code**
+
+## Install all other packages through conda file
+
+### 3) Download the and activate the moon_code work environment
+
+Firstly, I will email you the appropriate configuration file (.yml)
+
+Download this and save it locally, (I tend to create a folder in my top directory called software, and store configuration files in here)
+
+Then execute the following command to use the configuration file and install all require packages 
+
+```
+conda env create -f ~/PATH/TO/FILE/filename.yml
+```
+
+This should have a successful install message, let me know if not.
+
+Then to check the code has installed the required environment, execute the following command:
+
+```
+conda activate moon_code
+```
+
+This should change your extension in the terminal so that it has the following order:
+
+(moon_code)USER@PC:folder_location/
+
+You are now working in an environment where all packages are installed.
+
+**Every time that you leave the terminal, you will need to REACTIVATE YOUR WORKING ENVIRONMENT**
+
+To reactivate your working environment, use:
+
+```
+conda activate moon_code
+```
+
+
+## Code editors
+
+You will probably want to download a text editor for code editting, such as Sublime text
+
+```
+https://www.sublimetext.com/download
+```
