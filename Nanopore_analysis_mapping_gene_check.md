@@ -26,7 +26,6 @@ The folder will look similar to the image below, and the name of the folder will
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
 
->[!NOTE]
 >Do not change the name of this folder, it will help us to trace back results to each Nanopore run.
 
 
