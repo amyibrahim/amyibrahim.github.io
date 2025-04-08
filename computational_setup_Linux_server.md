@@ -22,7 +22,7 @@ ssh -X USERNAME@10.18.0.25
 
    **iii) You will be prompted for your password, this is the same as your username, then enter**
 
-
+***
 
 ### 2. Installing conda / mamba
 
@@ -47,7 +47,7 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 
 
 
-
+***
 
 
 ### 2. Install dorado
@@ -57,6 +57,21 @@ Install using [dorado's install link](https://github.com/nanoporetech/dorado?tab
 *When using dorado, you have to include the whole file path to whereever you dorado version is installed, the programme itself is within the bin folder*
 
 ![Screenshot 2024-12-16 at 17 54 45](https://github.com/user-attachments/assets/a5f6f51a-c42f-419c-9ef0-c2b5870004ae)
+
+**i) download dorado install file in the terminal (version number may change)**
+'''
+wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-0.9.1-linux-x64.tar.gz
+'''
+
+**ii) extract items from download file**
+
+'''
+tar -xzvf dorado-0.9.1-linux-x64.tar.gz
+'''
+
+
+***
+
 
 Now that both dorado and anaconda are installed on your system, you can use anaconda (a package manager) to create working environments with the essential programmes installed.
 
