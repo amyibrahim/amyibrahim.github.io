@@ -76,6 +76,7 @@ I will need to create an alias in your ~./bashrc file so that we can directly us
 
 ***
 
+## Install all other packages through conda file
 
 Now that both dorado and anaconda are installed on your system, you can use anaconda (a package manager) to create working environments with the essential programmes installed.
 
@@ -83,7 +84,6 @@ I have created a configuration file which contains all of the essential programm
 
 This environment is called **moon_code**
 
-## Install all other packages through conda file
 
 ### 3) Download the and activate the moon_code work environment
 
