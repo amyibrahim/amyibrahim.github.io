@@ -3,15 +3,15 @@
 
 This page will guide you through the steps to check the sequence of a parasite line
 
-**The basic steps involve:**
+## The basic steps involve:
 
-1. Basecalling your sequence data using Dorado
+  **1. Basecalling your sequence data using Dorado**
 
-2. Demultiplexing your reads into FASTQ sequence files for each barcode
+  **2. Demultiplexing your reads into FASTQ sequence files for each barcode**
 
-3. Mapping individual FASTQ files to your reference genome
+  **3. Mapping individual FASTQ files to your reference genome**
 
-4. Searching individual genes for coverage / SNPs
+  **4. Searching individual genes for coverage / SNPs**
 
 ***
 
