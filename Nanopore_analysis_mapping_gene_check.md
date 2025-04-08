@@ -21,36 +21,29 @@ Dorado should already be installed in your server account - **please ask me to h
 
 ### i) Migrate to the folder containing data from MinKNOW
 
-The folder will look similar to the image below, and the name of the folder will contian information on the date of the run and the flow cell used:
+The folder will look similar to the image below, and the name of the folder will contian information on the date of the run and the flow cell used.
+
+*- Do not change the name of this folder, it will help us to trace back results to each Nanopore run.*
 
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
-
-
->Do not change the name of this folder, it will help us to trace back results to each Nanopore run.
-
-
 
 ## ii) Within this folder, create a folder for the new basecalling output 
 
 ```
 mkdir dorado_sup_basecall
 ```
-
->[!NOTE]
->mkdir = make a new directory
+*mkdir = make a new directory*
 
 ## iii) Migrate into yor new directory
 
 ```
 cd dorado_sup_basecall
 ```
->[!NOTE]
->cd = change directory
+*cd = change directory*
 
 ## ii) Use dorado to start basecalling
 
->[!CAUTION]
->Basecalling is a slow process that takes a lot of memory, this may not run if other large process are running in the server at the same time
+>**Caution:** Basecalling is a slow process that takes a lot of memory, this may not run if other large process are running in the server at the same time
 
 ```
 dorado basecaller \
@@ -58,7 +51,7 @@ dorado basecaller \
 --kit-name SQK-NBD114-96 \
 sup ../pod5 > Filename_output.bam
 ```
->[!NOTE]
+>**Note:**
 >1. change the kit-name to the relevant kit name, is it NBD or RBK??
 >2. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
 
