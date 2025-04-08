@@ -27,23 +27,24 @@ The folder will look similar to the image below, and the name of the folder will
 
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
-## ii) Within this folder, create a folder for the new basecalling output 
+### ii) Within this folder, create a folder for the new basecalling output 
 
 ```
 mkdir dorado_sup_basecall
 ```
 *mkdir = make a new directory*
 
-## iii) Migrate into yor new directory
+### iii) Migrate into yor new directory
 
 ```
 cd dorado_sup_basecall
 ```
 *cd = change directory*
 
-## ii) Use dorado to start basecalling
+### iv) Use dorado to start basecalling
 
->**Caution:** Basecalling is a slow process that takes a lot of memory, this may not run if other large process are running in the server at the same time
+>**Note:**
+> Basecalling is a slow process that takes a lot of memory, this may not run if other large process are running in the server at the same time
 
 ```
 dorado basecaller \
@@ -55,11 +56,11 @@ sup ../pod5 > Filename_output.bam
 >1. change the kit-name to the relevant kit name, is it NBD or RBK??
 >2. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
 
-This creates a combined file in BAM format, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
+This creates a **combined file in BAM format**, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
 
 We can use this file to split all of the data into one file per Nanopore barcode to split our isolates into their separate pools.
 
-This process is known as **demultiplexing**
+This process is known as **DEMULTIPLEXING**
 
 ***
 
