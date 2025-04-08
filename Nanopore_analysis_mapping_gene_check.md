@@ -19,14 +19,14 @@ This page will guide you through the steps to check the sequence of a parasite l
 
 Dorado should already be installed in your server account - **please ask me to have a look if you have any issues running Dorado**
 
-### i) Migrate to the folder where the data from [MinKNOW] has been transferred to. MinKNOW outputs all seqeucing data in a folder with the name of the sequencing run, and all of the subdirectories are uniform between different runs.
-  
+### i) Migrate to the folder where the data from MinKNOW has been transferred to
+
 The folder will look similar to the image below:
 
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
-[!NOTE]
-Do not change the name of this folder, it will help us to trace back results to each Nanopore run.
+>[!NOTE]
+>Do not change the name of this folder, it will help us to trace back results to each Nanopore run.
 
 <br>
 - Within your sequence run folder, **create a folder** for the new basecalling output that you are about to generate
