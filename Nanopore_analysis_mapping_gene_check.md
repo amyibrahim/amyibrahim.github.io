@@ -28,32 +28,27 @@ The folder will look similar to the image below:
 >[!NOTE]
 >Do not change the name of this folder, it will help us to trace back results to each Nanopore run.
 
-<br>
-- Within your sequence run folder, **create a folder** for the new basecalling output that you are about to generate
+
+## ii) Within your sequence run folder, create a folder for the new basecalling output 
 
 ```
 mkdir dorado_sup_basecall
 ```
+>[!NOTE]
+>mkdir = make a new directory
 
-*mkdir = make a new directory*
-<br>
-
-- Migrate into your new directory
+## iii) Migrate into yor new directory
 
 ```
 cd dorado_sup_basecall
 ```
-*cd = change directory*
+>[!NOTE]
+>cd = change directory
 
-- Once you are in the folder, you can use a command to **use dorado to start basecalling your bases**
+## ii) Use dorado to start basecalling
 
----
-**NOTE**
-
-*The block of code below will needed to be editted to contain the whole filepath for dorado, for the correct library prep kit, and to edit the name of the output file for your run specifically*
-
----
-<br>
+>[!CAUTION]
+>Basecalling is a slow process that takes a lot of memory, this may not run if other large process are running in the server at the same time
 
 ```
 dorado basecaller \
@@ -61,6 +56,9 @@ dorado basecaller \
 --kit-name SQK-NBD114-96 \
 sup ../pod5 > Filename_output.bam
 ```
+>[!NOTE]
+>1. change the kit-name to the relevant kit name, is it NBD or RBK??
+>2. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
 
 This creates a combined file in BAM format, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
 
