@@ -116,7 +116,9 @@ This will open a blank text document, press 'i' to enter your text
 
 **2. Type ':wq!:'**
 
+
 **3. Press ENTER**
+
 
 
 **> Move your files into the barcodes used folder**
@@ -125,6 +127,7 @@ This will open a blank text document, press 'i' to enter your text
 cat ./barcodes_used/barcodes_used.txt | parallel -j 1 "mv ./PATH/TO/FILE/{}.bam ./barcodes_used"
 
 ```
+
 ***
 
 ## 5) Map your reads (bam files previously created) to a reference genome 
