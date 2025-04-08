@@ -4,7 +4,9 @@
 
 An account has been made for you as an individual user on the Linux server systems, here we can analyse data and run large processes.
 
-First we will need to install the software that we need for our analyses on each account, then we can head to the nanopore analysis pages - We will only need to install these packages the first time that we log in to the server!
+First we will need to install the software that we need for our analyses on each account, then we can head to the nanopore analysis pages.
+
+**We will only need to install these packages the first time that we log in to the server!**ls
 
 ### 1. Logging in to your account on the server
 
