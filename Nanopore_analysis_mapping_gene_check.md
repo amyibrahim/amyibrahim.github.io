@@ -66,17 +66,25 @@ We can use this file to split all of the data into one file per Nanopore barcode
 
 This process is known as **demultiplexing**
 
+***
+
 ## 3) Demultiplexing reads
+
+### i) Use dorado demux to demultiplex
 
 ```
 dorado demux --output-dir ./classified_demux --no-classify ./
 ```
 
-Within this folder, you will see files for barcodes that you did not use, do not worry, these files are likely empty or rubbish and can be ignored
+Within this folder **(classified_demux)**, you will see individual bam files for each barcode.
 
-You will want to create a separate folder containing only the barcodes that you have used, to ease all downstream analysis.
+Like below:
 
-## 4) Subsetting for barcodes that were used
+![Screenshot from 2025-04-08 16-11-08](https://github.com/user-attachments/assets/1607a104-d1f0-4811-9f12-57a11017c161)
+
+You will see barcodes that you did not use, do not worry, these files are likely empty or rubbish and can be ignored
+
+### ii) format your demultiplexing output
 
 First create a folder for the barcodes that you have used 
 
@@ -84,7 +92,33 @@ First create a folder for the barcodes that you have used
 mkdir barcodes_used
 ```
 
-Create a list within this folder of the names of the barcodes that you have used (barcodes_used.txt)
+**Create a list within this folder of the names of the barcodes that you have used (barcodes_used.txt)**
+
+An example of this file is:
+
+![Screenshot from 2025-04-08 16-14-40](https://github.com/user-attachments/assets/9d46a429-1949-4a4f-9269-637a32a094bb)
+
+
+>[!NOTE]
+>We will use **vim** a text editor to create this file
+
+```
+vim barcodes_used.txt
+```
+
+This will open a blank text document, press 'i' to enter your text
+
+List each barcode used in the **correct format** (matching the end of your filenames) on a new line -  **do not leave whitespace**
+
+**To exit vim:**
+
+**1. Press ESc**
+**2. Type ':wq!:'**
+**3. Press ENTER**
+
+
+
+
 
 Move your files into the barcodes used folder
 
