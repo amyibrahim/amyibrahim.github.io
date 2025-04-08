@@ -92,7 +92,7 @@ First create a folder for the barcodes that you have used
 mkdir barcodes_used
 ```
 
-**Create a list within this folder of the names of the barcodes that you have used (barcodes_used.txt)**
+**> Create a list within this folder of the names of the barcodes that you have used (barcodes_used.txt)**
 
 An example of this file is:
 
@@ -108,23 +108,25 @@ vim barcodes_used.txt
 
 This will open a blank text document, press 'i' to enter your text
 
-List each barcode used in the **correct format** (matching the end of your filenames) on a new line -  **do not leave whitespace**
+> List each barcode used in the **correct format** (matching the end of your filenames) on a new line -  **do not leave whitespace**
 
 **To exit vim:**
 
 **1. Press ESc**
+
 **2. Type ':wq!:'**
+
 **3. Press ENTER**
 
 
-
-
-
-Move your files into the barcodes used folder
+**> Move your files into the barcodes used folder**
 
 ```
 cat ./barcodes_used/barcodes_used.txt | parallel -j 1 "mv ./PATH/TO/FILE/{}.bam ./barcodes_used"
 
 ```
+***
 
 ## 5) Map your reads (bam files previously created) to a reference genome 
+
+### i) 
