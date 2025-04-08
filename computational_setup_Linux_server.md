@@ -59,15 +59,19 @@ Install using [dorado's install link](https://github.com/nanoporetech/dorado?tab
 ![Screenshot 2024-12-16 at 17 54 45](https://github.com/user-attachments/assets/a5f6f51a-c42f-419c-9ef0-c2b5870004ae)
 
 **i) download dorado install file in the terminal (version number may change)**
-'''
+
+```
 wget https://cdn.oxfordnanoportal.com/software/analysis/dorado-0.9.1-linux-x64.tar.gz
-'''
+```
 
 **ii) extract items from download file**
 
-'''
+```
 tar -xzvf dorado-0.9.1-linux-x64.tar.gz
-'''
+```
+
+**Note:**
+I will need to create an alias in your ~./bashrc file so that we can directly use dorado rather than using the full filepath
 
 
 ***
