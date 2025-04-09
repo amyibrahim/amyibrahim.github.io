@@ -165,8 +165,56 @@ Here is [the reference](https://academic.oup.com/bioinformatics/article/34/18/30
 >Minimap2 should already be installed in your server account, please let me know if there are issues running Minimap2
 
 ```
-minimap2 -ax map-ont ~/PATH/TO/GENOME/**REFERENCE.fa** ~/PATH/TO/BARCODED/BAMs/classified_demux/**XXX_barcode01.bam** > barcode01_aligned.sam       
+minimap2 -ax map-ont ~/PATH/TO/GENOME/REFERENCE.fa ~/PATH/TO/BARCODED/BAMs/classified_demux/XXX_barcode01.bam > barcode01_aligned.sam       
 ```
+>You will have to do this individually for each barcode file, and remember to change the names of the input and output files accordingly
+
+### iii) format your individual aligned files
+
+Alignment files are outputted as SAM files, these files are large - it is best to convert these to BAM files and then **DELETE YOUR SAM FILES**
+
+All of the following steps with utilise [samtools](https://rnnh.github.io/bioinfo-notebook/docs/samtools.html), a useful ackage for working with SAM and BAM files after sequencing.
+
+
+**a) convert SAM file to BAM file**
+```
+samtools view -Sb -o barcode01_aligned.bam barcode01_aligned.sam
+```
+>-Sb indicates that the input is a SAM file and the output is a BAM file
+>Change the name of each file accordingly depending on what sample you are working on
+
+**b) sort your BAM file**
+
+Sorting reorders the reads in your alignment based on their position when aligned to the reference genome
+
+```
+$ samtools sort -O bam -o barcode01_aligned.sorted.bam barcode01_aligned.bam
+```
+
+>-O bam specifies the output as a BAM file
+>-o specified the name of the output file
+
+**c) index your sorted BAM file**
+
+Indexing creates a 'contents page' of the aligned file, which is needed by many downstream applications, including tablet
+
+The index file created will be called FILENAME.bam.bai
+
+```
+samtools index barcode01_aligned.sorted.bam 
+
+```
+
+>Check for generation of the indexed file using 'ls' to list all files in the current directory
+
+***
+
+
+
+
+
+
+
 
 
 
