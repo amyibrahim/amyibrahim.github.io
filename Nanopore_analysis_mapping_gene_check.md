@@ -128,4 +128,35 @@ cat ./barcodes_used/barcodes_used.txt | parallel -j 1 "mv ./PATH/TO/FILE/{}.bam 
 
 ## 5) Map your reads (bam files previously created) to a reference genome 
 
-### i) 
+I have copied references genomes into your server account, within the folder, 'genomes', see below:
+
+![Screenshot from 2025-04-09 11-04-34](https://github.com/user-attachments/assets/97d7a462-705f-4fe7-a895-832a36bf752e)
+
+
+### i) Create a mapping directory 
+
+You are currently in the 'dorado_sup' directory, which contained your barcode-sorted basecalled reads
+
+It is a good idea to create a separate directory for the mapped reads
+
+**a) move up a directory**
+
+```
+cd ../
+```
+
+**b) create a new directory for mapped reads**
+
+```
+mkdir mapping
+```
+
+**c) migrate to the mapping directory**
+
+```
+cd mapping
+```
+
+### ii) Use Minimap2 to align your individual reads to the reference genome
+
+
