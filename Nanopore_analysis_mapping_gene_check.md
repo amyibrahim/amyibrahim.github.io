@@ -95,7 +95,6 @@ An example of this file is:
 ![Screenshot from 2025-04-08 16-14-40](https://github.com/user-attachments/assets/9d46a429-1949-4a4f-9269-637a32a094bb)
 
 
->[!NOTE]
 >We will use **vim** a text editor to create this file
 
 ```
@@ -158,5 +157,11 @@ cd mapping
 ```
 
 ### ii) Use Minimap2 to align your individual reads to the reference genome
+
+[Minimap2]() is a sequence aligner that is recommended for aligning long reads created by Oxford Nanopore sequencing technologies.
+
+Here is [the reference](https://academic.oup.com/bioinformatics/article/34/18/3094/4994778) for Minimap2, an here is a [tutorial page](https://docs.tinybio.cloud/docs/minimap2-tutorial).
+
+
 
 
