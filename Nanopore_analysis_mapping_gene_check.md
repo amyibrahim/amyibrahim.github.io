@@ -207,6 +207,15 @@ samtools index barcode01_aligned.sorted.bam
 >Check for generation of the indexed file using 'ls' to list all files in the current directory
 
 ***
+## 6) Checking mapping statistics / QC
+
+- bamstats
+
+- Kraken (Pepi)
+
+- genome coverage
+
+***
 
 
 
