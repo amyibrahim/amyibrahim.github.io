@@ -217,6 +217,15 @@ samtools index barcode01_aligned.sorted.bam
 
 ***
 
+## 7) Calling variants and looking for SNPs / INDELs
+
+- check the best variant caller for nanopore
+
+***
+
+## 8) Looking for large scale structural variants
+
+***
 
 
 
