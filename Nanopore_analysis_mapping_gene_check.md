@@ -188,7 +188,7 @@ samtools view -Sb -o barcode01_aligned.bam barcode01_aligned.sam
 Sorting reorders the reads in your alignment based on their position when aligned to the reference genome
 
 ```
-$ samtools sort -O bam -o barcode01_aligned.sorted.bam barcode01_aligned.bam
+samtools sort -O bam -o barcode01_aligned.sorted.bam barcode01_aligned.bam
 ```
 
 >-O bam specifies the output as a BAM file
@@ -202,7 +202,6 @@ The index file created will be called FILENAME.bam.bai
 
 ```
 samtools index barcode01_aligned.sorted.bam 
-
 ```
 
 >Check for generation of the indexed file using 'ls' to list all files in the current directory
