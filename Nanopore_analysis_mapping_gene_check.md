@@ -158,9 +158,16 @@ cd mapping
 
 ### ii) Use Minimap2 to align your individual reads to the reference genome
 
-[Minimap2]() is a sequence aligner that is recommended for aligning long reads created by Oxford Nanopore sequencing technologies.
+[Minimap2](https://github.com/lh3/minimap2) is a sequence aligner that is recommended for aligning long reads created by Oxford Nanopore sequencing technologies.
 
 Here is [the reference](https://academic.oup.com/bioinformatics/article/34/18/3094/4994778) for Minimap2, an here is a [tutorial page](https://docs.tinybio.cloud/docs/minimap2-tutorial).
+
+>Minimap2 should already be installed in your server account, please let me know if there are issues running Minimap2
+
+```
+minimap2 -ax map-ont ~/PATH/TO/GENOME/**REFERENCE.fa** ~/PATH/TO/BARCODED/BAMs/classified_demux/**XXX_barcode01.bam** > barcode01_aligned.sam       
+```
+
 
 
 
