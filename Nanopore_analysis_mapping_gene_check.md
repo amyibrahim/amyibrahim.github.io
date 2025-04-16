@@ -209,11 +209,50 @@ samtools index barcode01_aligned.sorted.bam
 ***
 ## 6) Checking mapping statistics / QC
 
-- bamstats
+### Check mapping statistics using samtools bamstats
 
-- Kraken (Pepi)
+```
+samtools flagstat FILENAME.bam
+```
 
-- genome coverage
+This will output the number of reads and the percentage of reads mapping to the reference genome for a basic measure of how much P. knowlesi data you have
+
+### Genome coverage plots - to do after Easter!
+
+
+***
+
+## 7) Visualising your genome in Tablet
+
+1. Install tablet
+
+Once tablet is installed, you will need to copy uour BAM file (filename.bam) and indexed BAM file (FILENAME.bam.bai) over into your PC where tablet is installed
+
+
+First copy over the bam file... 
+
+```
+scp USERNAME@10.18.0.25:FOLDER/FILE/PATH/TO/BAMFILE/FILENAME.bam ./
+```
+
+Then, copy over the inde file:
+
+```
+scp USERNAME@10.18.0.25:FOLDER/FILE/PATH/TO/BAMFILE/FILENAME.bam.bai ./
+```
+
+Now you can open Tablet in your local PC, and upload the relevant BAM file and your reference genome - the reference genome is already downloaded into your PC!
+
+
+
+***
+
+
+***
+Below - For Amy to edit after easter!!
+
+
+
 
 ***
 
