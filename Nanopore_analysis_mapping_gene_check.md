@@ -1,17 +1,31 @@
 
-# Using Nanopore sequene data to check specific genes 
-
 This page will guide you through the steps to check the sequence of a parasite line
 
 ## The basic steps involve:
 
   **1. Basecalling your sequence data using Dorado**
 
-  **2. Demultiplexing your reads into FASTQ sequence files for each barcode**
+  **2. Demultiplexing your reads into FASTQ sequence files for each barcode - Dorado**
 
-  **3. Mapping individual FASTQ files to your reference genome**
+  **3. Mapping individual FASTQ files to your reference genome using Minimap2 (built in to Dorado)**
 
   **4. Searching individual genes for coverage / SNPs**
+
+***
+## Set up before processing samples
+
+Before using Dorado to basecall and map your sequence data, you will need to create a sample sheet which you pass in to dorado, which contains all of the important information about your run.
+
+An example sample sheet looks like the one in the image below:
+
+<img width="966" alt="Screenshot 2025-04-28 at 12 06 57" src="https://github.com/user-attachments/assets/8123945f-cf76-4e34-8fec-5b9426af778b" />
+
+Create this sheet locally on your PC, specific for your run, and this can be transferred to your working folder in the server. This file should be saved in **CSV format**
+
+```
+scp sample_sheet.csv username@10.18.0.25:where/your/data/is/
+```
+^ you will be prompted for your password to log in and allow this file transfer.
 
 ***
 
@@ -50,11 +64,14 @@ cd dorado_sup_basecall
 dorado basecaller \
 --min-qscore 10 \
 --kit-name SQK-NBD114-96 \
+--sample-sheet sample_sheet.csv \
 sup ../pod5 > Filename_output.bam
 ```
 >**Note:**
->1. change the kit-name to the relevant kit name, is it NBD or RBK??
->2. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
+>1. The kit-name in your sample sheet will need to match the exact kit index that dorado is looking for, from the following list:
+> EXP-NBD103 EXP-NBD104 EXP-NBD114 EXP-NBD114-24 EXP-NBD196 EXP-PBC001 EXP-PBC096 SQK-16S024 SQK-16S114-24 SQK-LWB001 SQK-MLK111-96-XL SQK-MLK114-96-XL SQK-NBD111-24 SQK-NBD111-96 SQK-NBD114-24 SQK-NBD114-96 SQK-PBK004 SQK-PCB109 SQK-PCB110 SQK-PCB111-24 SQK-PCB114-24 SQK-RAB201 SQK-RAB204 SQK-RBK001 SQK-RBK004 SQK-RBK110-96 SQK-RBK111-24 SQK-RBK111-96 SQK-RBK114-24 SQK-RBK114-96 SQK-RLB001 SQK-RPB004 SQK-RPB114-24 TWIST-16-UDI TWIST-96A-UDI VSK-PTC001 VSK-VMK001 VSK-VMK004 VSK-VPS001
+
+>3. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
 
 This creates a **combined file in BAM format**, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
 
