@@ -18,7 +18,7 @@ Before using Dorado to basecall and map your sequence data, you will need to cre
 
 An example sample sheet looks like the one in the image below:
 
-<img width="966" alt="Screenshot 2025-04-28 at 12 06 57" src="https://github.com/user-attachments/assets/8123945f-cf76-4e34-8fec-5b9426af778b" />
+<img width="963" alt="Screenshot 2025-04-28 at 12 14 55" src="https://github.com/user-attachments/assets/8846c6c8-c790-4fbf-b738-153e08fc2d39" />
 
 Create this sheet locally on your PC, specific for your run, and this can be transferred to your working folder in the server. This file should be saved in **CSV format**
 
