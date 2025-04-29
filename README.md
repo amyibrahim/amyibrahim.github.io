@@ -40,9 +40,6 @@ graph TD;
     D ---> F[Genome assembly using Pilon/RagTag]
 ```
 
-A["`[Click me](link)`"]
-
-
 [Initial computer set up for coding - mac users](./Computational_setup_mac.md)
 
 [Initial computer set up for coding - windows users](./Computational_setup_windows.md)
