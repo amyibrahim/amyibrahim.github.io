@@ -49,61 +49,31 @@ To copy the file over into your server account use:
 ```
 scp FILENAME.csv USERNAME@10.18.0.25:nanopore_data/MY_RUN/
 ```
-
-
-  **1. Basecalling your sequence data using Dorado**
-
-  **2. Demultiplexing your reads into FASTQ sequence files for each barcode - Dorado**
-
-  **3. Mapping individual FASTQ files to your reference genome using Minimap2 (built in to Dorado)**
-
-  **4. Searching individual genes for coverage / SNPs**
-
-***
-## Set up before processing samples
-
-Before using Dorado to basecall and map your sequence data, you will need to create a sample sheet which you pass in to dorado, which contains all of the important information about your run.
-
-An example sample sheet looks like the one in the image below:
-
-<img width="963" alt="Screenshot 2025-04-28 at 12 14 55" src="https://github.com/user-attachments/assets/8846c6c8-c790-4fbf-b738-153e08fc2d39" />
-
-Create this sheet locally on your PC, specific for your run, and this can be transferred to your working folder in the server. This file should be saved in **CSV format**
-
-```
-scp sample_sheet.csv username@10.18.0.25:where/your/data/is/
-```
-^ you will be prompted for your password to log in and allow this file transfer.
-
 ***
 
-## 1. Basecalling using Dorado
+### 3. Basecalling using Dorado
 
-Dorado should already be installed in your server account - **please ask me to have a look if you have any issues running Dorado**
-
-### i) Migrate to the folder containing data from MinKNOW
-
-The folder will look similar to the image below, and the name of the folder will contian information on the date of the run and the flow cell used.
+Migrate to the folder containing data from MinKNOW - the folder will look similar to the image below, and the name of the folder will contian information on the date of the run and the flow cell used.
 
 *- Do not change the name of this folder, it will help us to trace back results to each Nanopore run.*
 
 <img width="683" alt="Screenshot 2024-12-17 at 16 18 37" src="https://github.com/user-attachments/assets/bb7334a0-7883-481f-a96b-58c677765db1" />
 
-### ii) Within this folder, create a folder for the new basecalling output 
+Within this folder, **create a folder for the new basecalling output** 
 
 ```
 mkdir dorado_sup_basecall
 ```
 *mkdir = make a new directory*
 
-### iii) Migrate into yor new directory
+Migrate into yor new directory
 
 ```
 cd dorado_sup_basecall
 ```
 *cd = change directory*
 
-### iv) Use dorado to start basecalling
+**Use dorado to start basecalling**
 
 >**Note:**
 > Basecalling is a slow process that takes a lot of memory, this may not run if other large process are running in the server at the same time
