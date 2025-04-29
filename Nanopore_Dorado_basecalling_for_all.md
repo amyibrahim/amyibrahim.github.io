@@ -17,8 +17,24 @@ However, we have specific questions, and want to use a more accurate basecaller,
 
 ***
 
+### 1. Familiarise yourself with the working environment
+
+First you will need to familiarise yourself with your data output and the organisation of your files, have a look in the server in your run output folder (e.g. AINP001) using 'ls' to list the contents of directories.
+
+Your run output folder should look something like this:
+
+![Screenshot from 2025-04-29 13-38-47](https://github.com/user-attachments/assets/45b484f6-de02-4c43-b40d-52af269d1b80)
+
+The basecalled reads, which MinKNOW generated using a speedy (less acurrate) basecaller are within the **fastq_pass** and **fastq_fail** folders (standard QC in basecalling has organised them inot passed and failed reads based on their quality).
+
+The unbasecalled, raw electrical signals are saved in pod5 files and can be found in the folder **pod5**
 
 
+***
+
+### 2. Set up the files that you need for the basecaller
+
+Dorado will require certain information 
 
 
 
