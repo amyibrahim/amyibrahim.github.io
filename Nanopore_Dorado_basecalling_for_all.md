@@ -1,5 +1,14 @@
 
-This page will guide you through the steps to check the sequence of a parasite line
+As you perform your oxford nanopore sequencing run, the sequence data is being read as electrical squiggles, and this is converted to DNA bases in real time, in a process known as basecalling.
+
+Basecalling uses an algorithmn to convert electrical signals into nucleotide sequences, read more about basecalling [here](https://nanoporetech.com/platform/technology/basecalling)
+
+The software used by the sequencing computer, **MinKNOW**, has an inbuilt basecalling algorithmn, which is good for analysing your data rapidly.
+
+However, we have specific questions, and want to use a more accurate basecaller, **Dorado** to basecall our raw data which we can then analyse.
+
+
+
 
 ## The basic steps involve:
 
