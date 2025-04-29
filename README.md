@@ -50,7 +50,7 @@ graph TD;
 
 [Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
 
-[Nanopore analysis for genome mapping and checking specific genes (basic)](./Nanopore_analysis_mapping_gene_check.md/)
+[Nanopore basecalling using Dorado (basic)](./Nanopore_Dorado_basecalling_for_all.md/)
 
 
 
