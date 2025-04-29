@@ -31,12 +31,13 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 ## Computational Training
 
-
+```mermaid
 graph TD;
     A-->B;
     A-->C;
     B-->D;
     C-->D;
+```
 
 [Initial computer set up for coding - mac users](./Computational_setup_mac.md)
 
