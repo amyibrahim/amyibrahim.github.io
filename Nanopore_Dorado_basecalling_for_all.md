@@ -7,10 +7,20 @@ The software used by the sequencing computer, **MinKNOW**, has an inbuilt baseca
 
 However, we have specific questions, and want to use a more accurate basecaller, **Dorado** to basecall our raw data which we can then analyse.
 
+***
+
+### This worksheet will guide you through the steps in using Dorado to basecall your sequence data, please follow the links in this page for your further analysis steps.
+
+***
+
+## BASECALLING - DORADO
+
+***
 
 
 
-## The basic steps involve:
+
+
 
   **1. Basecalling your sequence data using Dorado**
 
