@@ -34,8 +34,21 @@ The unbasecalled, raw electrical signals are saved in pod5 files and can be foun
 
 ### 2. Set up the files that you need for the basecaller
 
-Dorado will require certain information 
+Dorado will require certain information to complete the basecalling programme, we can provide this in a **sample sheet**
 
+There is a specific format for the sample sheet, the information can be found [here](https://github.com/nanoporetech/dorado/blob/release-v0.9/documentation/SampleSheets.md), and an example is in the image below:
+
+![Screenshot from 2025-04-29 14-41-56](https://github.com/user-attachments/assets/fd390bd4-6232-46cf-9b10-f6cdea8778a9)
+
+You can create the sample sheet above in excel and copy it over to your account in the server when you have finished.
+
+When creating the file in excel, please use the **exact header names shown above** and save the file as a **.csv** file.
+
+To copy the file over into your server account use:
+
+```
+scp FILENAME.csv USERNAME@10.18.0.25:nanopore_data/MY_RUN/
+```
 
 
   **1. Basecalling your sequence data using Dorado**
