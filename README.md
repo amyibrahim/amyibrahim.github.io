@@ -33,13 +33,15 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 ```mermaid
 graph TD;
-    A[Sequence your samples using Nanopore] --> B[Basecall sequence data with Dorado];
-      click B "https://amyibrahim.github.io/Nanopore_Dorado_basecalling_for_all.html" 
+    A[Sequence your samples using Nanopore] --> B["`[Basecall sequence data with Dorado](https://amyibrahim.github.io/Nanopore_Dorado_basecalling_for_all.html)`"];
     B--->C[Map your sequence data to an available reference genome];
     B--->D[Generate a genome assembly for this parasite line];
     C ---> E[Look for variants in specific genes];
     D ---> F[Genome assembly using Pilon/RagTag]
 ```
+
+A["`[Click me](link)`"]
+
 
 [Initial computer set up for coding - mac users](./Computational_setup_mac.md)
 
