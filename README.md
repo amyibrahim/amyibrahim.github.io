@@ -33,7 +33,7 @@ Previously, I have worked on whole genomoe sequencing for malaria parasites, usi
 
 ```mermaid
 graph TD;
-    A-->B;
+    Sequence your samples using Nanopore-->BAsecall sequence data with Dorado;
     A-->C;
     B-->D;
     C-->D;
