@@ -4,5 +4,5 @@ When investigating large scale genomic changes, or novel genomes, rather than al
 
 Genome assembly requires more data, and a higher sequence coverage than sequencing your isolates and mapping this data to a reference genome.
 
-Some notes on genome assembly can be found (here)[https://star-protocols.cell.com/protocols/1799]
+Some notes on genome assembly can be found [here](https://star-protocols.cell.com/protocols/1799)
 
