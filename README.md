@@ -48,7 +48,7 @@ graph TD;
 
 [Nanopore analysis for custom barcodes](./Nanopore_analysis_barcodes.md) 
 
-[Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.html/)
+[Nanopore analysis for genome assembly](./Nanopore_analysis_genome_assembly.md/)
 
 [Nanopore basecalling using Dorado (basic)](./Nanopore_Dorado_basecalling_for_all.md/)
 
