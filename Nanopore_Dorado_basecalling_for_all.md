@@ -270,7 +270,7 @@ First copy over the bam file...
 scp USERNAME@10.18.0.25:FOLDER/FILE/PATH/TO/BAMFILE/FILENAME.bam ./
 ```
 
-Then, copy over the inde file:
+Then, copy over the index file:
 
 ```
 scp USERNAME@10.18.0.25:FOLDER/FILE/PATH/TO/BAMFILE/FILENAME.bam.bai ./
@@ -284,16 +284,10 @@ Now you can open Tablet in your local PC, and upload the relevant BAM file and y
 
 
 ***
-Below - For Amy to edit after easter!!
 
+## 8) Calling variants and looking for SNPs / INDELs
 
-
-
-***
-
-## 7) Calling variants and looking for SNPs / INDELs
-
-- check the best variant caller for nanopore
+- TO DO!!!
 
 ***
 
