@@ -9,9 +9,11 @@ However, we have specific questions, and want to use a more accurate basecaller,
 
 ***
 
-### This worksheet will guide you through the steps in using Dorado to basecall your sequence data, please follow the links in this page for your further analysis steps.
+**This worksheet will guide you through the steps in using Dorado to basecall your sequence data, please follow the links in this page for your further analysis steps**
 
 ***
+
+
 
 ## BASECALLING - DORADO
 
@@ -25,35 +27,16 @@ Your run output folder should look something like this:
 
 ![Screenshot from 2025-04-29 13-38-47](https://github.com/user-attachments/assets/45b484f6-de02-4c43-b40d-52af269d1b80)
 
-The basecalled reads, which MinKNOW generated using a speedy (less acurrate) basecaller are within the **fastq_pass** and **fastq_fail** folders (standard QC in basecalling has organised them inot passed and failed reads based on their quality).
+The basecalled reads, which MinKNOW generated using a speedy (less acurrate) basecaller are within the **fastq_pass** and **fastq_fail** folders (standard QC in basecalling has organised them into passed and failed reads based on their quality).
 
-The unbasecalled, raw electrical signals are saved in pod5 files and can be found in the folder **pod5**
+The non-basecalled, raw electrical signals are saved in pod5 files and can be found in the folder **pod5**
 
 
 ***
 
-### 2. Set up the files that you need for the basecaller
+### 2. Basecalling using Dorado
 
-Dorado will require certain information to complete the basecalling programme, we can provide this in a **sample sheet**
-
-There is a specific format for the sample sheet, the information can be found [here](https://github.com/nanoporetech/dorado/blob/release-v0.9/documentation/SampleSheets.md), and an example is in the image below:
-
-![Screenshot from 2025-04-29 14-41-56](https://github.com/user-attachments/assets/fd390bd4-6232-46cf-9b10-f6cdea8778a9)
-
-You can create the sample sheet above in excel and copy it over to your account in the server when you have finished.
-
-When creating the file in excel, please use the **exact header names shown above** and save the file as a **.csv** file.
-
-To copy the file over into your server account use:
-
-```
-scp FILENAME.csv USERNAME@10.18.0.25:nanopore_data/MY_RUN/
-```
-***
-
-### 3. Basecalling using Dorado
-
-Migrate to the folder containing data from MinKNOW - the folder will look similar to the image below, and the name of the folder will contian information on the date of the run and the flow cell used.
+Migrate to the folder containing data from MinKNOW - the folder will look similar to the image below, and the name of the folder will contain information on the date of the run and the flow cell used.
 
 *- Do not change the name of this folder, it will help us to trace back results to each Nanopore run.*
 
@@ -82,14 +65,13 @@ cd dorado_sup_basecall
 dorado basecaller \
 --min-qscore 10 \
 --kit-name SQK-NBD114-96 \
---sample-sheet sample_sheet.csv \
 sup ../pod5 > Filename_output.bam
 ```
 >**Note:**
 >1. The kit-name in your sample sheet will need to match the exact kit index that dorado is looking for, from the following list:
 > EXP-NBD103 EXP-NBD104 EXP-NBD114 EXP-NBD114-24 EXP-NBD196 EXP-PBC001 EXP-PBC096 SQK-16S024 SQK-16S114-24 SQK-LWB001 SQK-MLK111-96-XL SQK-MLK114-96-XL SQK-NBD111-24 SQK-NBD111-96 SQK-NBD114-24 SQK-NBD114-96 SQK-PBK004 SQK-PCB109 SQK-PCB110 SQK-PCB111-24 SQK-PCB114-24 SQK-RAB201 SQK-RAB204 SQK-RBK001 SQK-RBK004 SQK-RBK110-96 SQK-RBK111-24 SQK-RBK111-96 SQK-RBK114-24 SQK-RBK114-96 SQK-RLB001 SQK-RPB004 SQK-RPB114-24 TWIST-16-UDI TWIST-96A-UDI VSK-PTC001 VSK-VMK001 VSK-VMK004 VSK-VPS001
 
->3. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
+>2. The above code uses the 'sup' basecalling alogrithm, this is the most accurate, but slowest
 
 This creates a **combined file in BAM format**, that contains all of your sequence data reads in one file, each read has a header line with information, where the barcode within the reads is listed.
 
@@ -99,9 +81,9 @@ This process is known as **DEMULTIPLEXING**
 
 ***
 
-## 3) Demultiplexing reads
+### 3) Demultiplexing reads using Dorado
 
-### i) Use dorado demux to demultiplex
+Demultiplexing splits your sequence data (individual reads) into seperate files so that each isolate (with its own unique nanopore barcode) has all of the data in one file/folder
 
 ```
 dorado demux --output-dir ./classified_demux --no-classify ./
@@ -115,83 +97,41 @@ Like below:
 
 You will see barcodes that you did not use, do not worry, these files are likely empty or rubbish and can be ignored
 
-### ii) format your demultiplexing output
-
-First create a folder for the barcodes that you have used 
-
-```
-mkdir barcodes_used
-```
-
-**> Create a list within this folder of the names of the barcodes that you have used (barcodes_used.txt)**
-
-An example of this file is:
-
-![Screenshot from 2025-04-08 16-14-40](https://github.com/user-attachments/assets/9d46a429-1949-4a4f-9269-637a32a094bb)
-
-
->We will use **vim** a text editor to create this file
-
-```
-vim barcodes_used.txt
-```
-
-This will open a blank text document, press 'i' to enter your text
-
-> List each barcode used in the **correct format** (matching the end of your filenames) on a new line -  **do not leave whitespace**
-
-**To exit vim:**
-
-**1. Press ESc**
-
-**2. Type ':wq!:'**
-
-
-**3. Press ENTER**
-
-
-
-**> Move your files into the barcodes used folder**
-
-```
-cat ./barcodes_used/barcodes_used.txt | parallel -j 1 "mv ./PATH/TO/FILE/{}.bam ./barcodes_used"
-
-```
 
 ***
 
-## 5) Map your reads (bam files previously created) to a reference genome 
+### 4) Map your reads (bam files previously created) to a reference genome 
 
 I have copied references genomes into your server account, within the folder, 'genomes', see below:
 
 ![Screenshot from 2025-04-09 11-04-34](https://github.com/user-attachments/assets/97d7a462-705f-4fe7-a895-832a36bf752e)
 
+ >Note you may have one or many of these files in your genome folder, all that you need for mapping is the GENOMENAME.fasta file
 
-### i) Create a mapping directory 
 
 You are currently in the 'dorado_sup' directory, which contained your barcode-sorted basecalled reads
 
-It is a good idea to create a separate directory for the mapped reads
+It is a good idea to **create a separate directory for the mapped reads**
 
-**a) move up a directory**
+move up a directory
 
 ```
 cd ../
 ```
 
-**b) create a new directory for mapped reads**
+create a new directory for mapped reads
 
 ```
 mkdir mapping
 ```
 
-**c) migrate to the mapping directory**
+migrate to the mapping directory
 
 ```
 cd mapping
 ```
 
-### ii) Use Minimap2 to align your individual reads to the reference genome
+**Use Minimap2 to align your individual reads to the reference genome**
 
 [Minimap2](https://github.com/lh3/minimap2) is a sequence aligner that is recommended for aligning long reads created by Oxford Nanopore sequencing technologies.
 
