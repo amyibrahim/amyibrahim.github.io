@@ -154,14 +154,14 @@ Alignment files are outputted as SAM files, these files are large - it is best t
 All of the following steps with utilise [samtools](https://rnnh.github.io/bioinfo-notebook/docs/samtools.html), a useful ackage for working with SAM and BAM files after sequencing.
 
 
-Convert SAM file to BAM file
+**- Convert SAM file to BAM file**
 ```
 samtools view -Sb -o barcode01_aligned.bam barcode01_aligned.sam
 ```
 >-Sb indicates that the input is a SAM file and the output is a BAM file
 >Change the name of each file accordingly depending on what sample you are working on
 
-Sort your BAM file
+**- Sort your BAM file**
 
 Sorting reorders the reads in your alignment based on their position when aligned to the reference genome
 
@@ -172,7 +172,7 @@ samtools sort -O bam -o barcode01_aligned.sorted.bam barcode01_aligned.bam
 >-O bam specifies the output as a BAM file
 >-o specified the name of the output file
 
-Index your sorted BAM file
+**- Index your sorted BAM file**
 
 Indexing creates a 'contents page' of the aligned file, which is needed by many downstream applications, including [Tablet](https://ics.hutton.ac.uk/tablet/)
 
